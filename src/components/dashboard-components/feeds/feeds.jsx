@@ -8,6 +8,7 @@ import {
 } from 'reactstrap';
 
 import { Pie } from 'react-chartjs-2';
+import { Line } from 'react-chartjs-2';
 import React, {Component} from 'react';
 
 class PieChartComponent extends Component {
@@ -15,10 +16,10 @@ class PieChartComponent extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            labels: ['ABC', 'XYZ', 'PQR'],
+            labels: ['Security', 'Biasness'],
             datasets: [{
-                data: [1000,4000,32850],
-                backgroundColor: ['red', 'blue', 'green']
+                data: [2000, 1500],
+                backgroundColor: [' #ffcc13', '#2962ff']
             }]
         }
     }
@@ -27,25 +28,18 @@ render() {
     return (
         <Card>
             <CardBody>
-                <div className="d-flex align-items-center">
-                    <div>
-                        <CardTitle>Overview</CardTitle>
-                        <CardSubtitle>Details about the Graph</CardSubtitle>
+                <Row>
+                    <div className="d-flex align-items-center">
+                            <div>
+                                <CardTitle>Key Matrix</CardTitle>
+                                {/* <CardSubtitle>Details about the Graph</CardSubtitle> */}
+                            </div>
                     </div>
-                    <div className="ml-auto ">
-                         <ul className="list-inline font-12 dl mr-3 mb-0">
-                            <li className="border-0 p-0 text-info list-inline-item">
-                                 <i className="fa fa-circle"></i> Security
- 							</li>
-                            <li className="border-0 p-0 text-primary list-inline-item">
-                                 <i className="fa fa-circle"></i> Biasness
- 							</li>
-                        </ul>
-                    </div>
+                </Row>
                     <Row>
                         <Col lg="12">
                             <div className="campaign ct-charts">
-                          z      <div className="chart-wrapper" style={{ width: '100%', margin: '0 auto', height: 250 }}>
+                                <div className="chart-wrapper" style={{ width: '0%', margin: '0 auto', height: '0px' }}>
                                     
                                 </div>
                             </div>
@@ -56,10 +50,10 @@ render() {
                             labels: this.state.labels,
                             datasets: this.state.datasets
                         }}
-                        height='100%'
+                        height='216.5%'
                     />
                     <br />
-                    </div>
+                
             </CardBody>
         </Card>
     )

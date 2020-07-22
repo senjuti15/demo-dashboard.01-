@@ -1045,8 +1045,8 @@ pre {
   .table thead th {
     vertical-align: bottom;
     border-bottom: 2px solid #dee2e6; }
-  .table tbody + tbody {
-    border-top: 2px solid #dee2e6; }
+  /* .table tbody + tbody {
+    border-top: 0px solid #dee2e6; } */
   .table .table {
     background-color: #fff; }
 
