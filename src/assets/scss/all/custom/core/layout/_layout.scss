@@ -227,13 +227,11 @@
       .left-sidebar {
         width: $sidebar-width-mini;
         overflow: hidden; 
-        &:hover {
+      :hover {
           width: $sidebar-width-full;
           .sidebar-nav {
-            .hide-menu,
-            .has-arrow:after {
-              display: block;
-            }
+          .hide-menu,
+           
             .nav-small-cap {
               justify-content: flex-start;
             }
