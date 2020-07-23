@@ -16,10 +16,10 @@ class PieChartComponent extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            labels: ['Security', 'Biasness'],
+            labels: ['Security', 'Biasness', 'Compliance', 'Transperancy', 'Business Impact'],
             datasets: [{
-                data: [2000, 1500],
-                backgroundColor: [' #ffcc13', '#2962ff']
+                data: [200, 300, 350, 400, 150],
+                backgroundColor: ['#FFC000', '#C04040', '#8040C0','#0040C0','#008040']
             }]
         }
     }
@@ -50,7 +50,7 @@ render() {
                             labels: this.state.labels,
                             datasets: this.state.datasets
                         }}
-                        height='216.5%'
+                        height='200%'
                     />
                     <br />
                 

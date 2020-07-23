@@ -12,13 +12,13 @@ var ThemeRoutes = [
   },
   {
     path: '/alert',
-    name: 'MERIT AI Framework',
+    name: 'AI Assesment',
     icon: 'mdi mdi-comment-processing-outline',
     component: Alerts
   },
   {
     path: '/badge',
-    name: 'MERIT Impact Framework',
+    name: 'Business Impact',
     icon: 'mdi mdi-arrange-send-backward',
     component: Badges
   },
