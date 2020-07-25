@@ -1,15 +1,16 @@
 let chart1_2_options = {
-    maintainAspectRatio: false,
+    maintainAspectRatio: true,
+   
     legend: {
-      display: false
+      display: true
     },
     tooltips: {
       backgroundColor: "#f5f5f5",
       titleFontColor: "#333",
       bodyFontColor: "#666",
-      bodySpacing: 4,
-      xPadding: 12,
-      mode: "nearest",
+      bodySpacing: 40,
+      
+      
       intersect: 0,
       position: "nearest"
     },
@@ -17,6 +18,7 @@ let chart1_2_options = {
     scales: {
       yAxes: [
         {
+          
           barPercentage: 1.6,
           gridLines: {
             drawBorder: false,
@@ -33,7 +35,8 @@ let chart1_2_options = {
       ],
       xAxes: [
         {
-          barPercentage: 1.6,
+     
+          barPercentage: 0.7,
           gridLines: {
             drawBorder: false,
             color: "rgba(29,140,248,0.1)",
@@ -47,6 +50,7 @@ let chart1_2_options = {
       ]
     }
   };
+
   
   
   let chartExample1 = {
@@ -58,38 +62,55 @@ let chart1_2_options = {
       gradientStroke.addColorStop(1, "rgba(29,140,248,0.2)");
       gradientStroke.addColorStop(0.4, "rgba(29,140,248,0.0)");
       gradientStroke.addColorStop(0, "rgba(29,140,248,0)"); //blue colors
+
+      let gradientStroke1 = ctx.createLinearGradient(0, 230, 0, 50);
+  
+      gradientStroke1.addColorStop(1, "rgba(208,72,182,0.2)");
+      gradientStroke1.addColorStop(0.4, "rgba(208,72,182,0.0)");
+      gradientStroke1.addColorStop(0, "rgba(208,72,182,0)"); //blue colors
   
       return {
         labels: [
-          "JAN",
-          "FEB",
-          "MAR",
-          "APR",
-          "MAY",
-          "JUN",
-          "JUL",
-          "AUG",
-          "SEP",
-          "OCT",
-          "NOV",
-          "DEC"
+          "Attack-1",
+          "Attack-2",
+          "Attack-3",
+          "Attack-4",
+          "Attack-5"
+
         ],
         datasets: [
           {
+            label: "Before",
+            fill: true,
+            backgroundColor: gradientStroke1,
+            borderColor: "#d048b6 ",
+            borderWidth: 2,
+            pointBackgroundColor: "#d048b6 ",
+            pointBorderColor: "rgba(255,255,255,0)",
+            pointHoverBackgroundColor: "#d048b6 ",
+            pointBorderWidth: 1,
+            pointHoverRadius: 4,
+            pointHoverBorderWidth: 15,
+            stack: '0',
+            pointRadius: 4,
+            data: [100, 70, 50, 150, 80]
+            
+          },
+          {
+            label:"After",
             fill: true,
             backgroundColor: gradientStroke,
             borderColor: "#1f8ef1",
             borderWidth: 2,
-            borderDash: [],
-            borderDashOffset: 0.0,
             pointBackgroundColor: "#1f8ef1",
             pointBorderColor: "rgba(255,255,255,0)",
             pointHoverBackgroundColor: "#1f8ef1",
-            pointBorderWidth: 20,
+            pointBorderWidth: 1,
             pointHoverRadius: 4,
             pointHoverBorderWidth: 15,
+            stack: '1',
             pointRadius: 4,
-            data: [100, 70, 90, 70, 85, 60, 75, 60, 90, 80, 110, 100]
+            data: [50, 30, 20, 100, 40]
           }
         ]
       };
@@ -152,16 +173,7 @@ let chart1_2_options = {
         labels: [
           "JAN",
           "FEB",
-          "MAR",
-          "APR",
-          "MAY",
-          "JUN",
-          "JUL",
-          "AUG",
-          "SEP",
-          "OCT",
-          "NOV",
-          "DEC"
+          "MAR"
         ],
         datasets: [
           {
@@ -179,8 +191,9 @@ let chart1_2_options = {
             pointHoverRadius: 4,
             pointHoverBorderWidth: 15,
             pointRadius: 4,
-            data: [60, 80, 65, 130, 80, 105, 90, 130, 70, 115, 60, 130]
-          }
+            stack: 0,
+            data: [60, 80, 65]
+          },
         ]
       };
     },
@@ -223,6 +236,8 @@ let chart1_2_options = {
     },
     options: chart1_2_options
   };
+
+  
   
   
   let chartExample3 = {
@@ -236,20 +251,39 @@ let chart1_2_options = {
       gradientStroke.addColorStop(0, "rgba(119,52,169,0)"); //purple colors
   
       return {
-        labels: ["USA", "GER", "AUS", "UK", "RO", "BR"],
-        datasets: [
-          {
-            label: "Countries",
-            fill: true,
-            backgroundColor: gradientStroke,
-            hoverBackgroundColor: gradientStroke,
-            borderColor: "#d048b6",
-            borderWidth: 2,
-            borderDash: [],
-            borderDashOffset: 0.0,
-            data: [53, 20, 10, 80, 100, 45]
+       
+          type: 'heatmap',
+          data: {
+              xLabels: ['2014', '2015', '2016', '2017'],
+              yLabels: ['Strength', 'Intelligence', 'Stamina', 'Spirit'],
+              datasets: [{
+                  data: [{
+                      y: 0, // index of 'Strength'
+                      x: 0, // index of '2014'
+                      a: 0.5, // alpha of the color [0, 1]
+                      v: 500, // value
+                  }, {
+                      y: 2, // index of 'Stamina'
+                      x: 0, // index of '2014'
+                      a: 0.2, // alpha of the color [0, 1]
+                      v: 250, // value
+                  }, {
+                       y: 1, // index of 'Intelligence'
+                       x: 3, // index of '2017'
+                       a: 1, // alpha of the color [0, 1]
+                       v: 1000, // value
+                  }]
+              }]
+          },
+          options: {
+              yColors: [ // colors for each lines
+                  {r: 0,   g: 150, b: 136},
+                  {r: 255, g: 235, b: 59},
+                  {r: 255, g: 152, b: 0},
+                  {r: 244, g: 67,  b: 54}
+              ],
           }
-        ]
+      
       };
     },
     options: {

@@ -11,50 +11,116 @@ import { Line } from 'react-chartjs-2';
 
 // ['#FFC000', '#C04040', '#8040C0','#0040C0','#008040']
 
-//Line chart
-let lineData = {
-    labels: [0, 2, 3, 4, 5, 6, 7, 8],
-    datasets: [{
-        label: 'Income',
-        borderWidth: 1,
 
-        borderColor: '#FFC000',
-        pointBorderColor: '#FFC000',
-        pointBackgroundColor: '#FFC000',
-        data: [0, 15, 6, 11, 25, 9, 18, 24]
-    }, {
-        label: 'Outcome',
-        borderWidth: 1,
-       
-        borderColor: '#C04040',
-        pointBorderColor: '#C04040',
-        pointBackgroundColor: '#C04040',
-        data: [0, 8, 11, 22, 8, 10, 5, 21]
-    }, {
-        label: 'Outcome',
-        borderWidth: 1,
-       
-        borderColor: '#8040C0',
-        pointBorderColor: '#8040C0',
-        pointBackgroundColor: '#8040C0',
-        data: [0, 8, 11, 22, 8, 10, 5, 21]
-    },{
-        label: 'Outcome',
-        borderWidth: 1,
-       
-        borderColor: '#0040C0',
-        pointBorderColor: '#0040C0',
-        pointBackgroundColor: '#0040C0',
-        data: [0, 11, 8, 0, 8, 3, 5, 5]
-    },{
-        label: 'Outcome',
-        borderWidth: 1,
-       
-        borderColor: '#008040',
-        pointBorderColor: '#008040',
-        pointBackgroundColor: '#008040',
-        data: [0, 8, 11, 22, 8, 10, 5, 21]
-    }]
+const data = {
+  labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+  datasets: [
+    {
+      label: 'Security',
+      fill: false,
+      lineTension: 0.1,
+      backgroundColor: 'rgba(75,192,192,0.4)',
+      borderColor: 'rgba(75,192,192,1)',
+      borderCapStyle: 'butt',
+      borderDash: [],
+      borderDashOffset: 0.0,
+      borderJoinStyle: 'miter',
+      pointBorderColor: 'rgba(75,192,192,1)',
+      pointBackgroundColor: '#fff',
+      pointBorderWidth: 1,
+      pointHoverRadius: 5,
+      pointHoverBackgroundColor: 'rgba(75,192,192,1)',
+      pointHoverBorderColor: 'rgba(220,220,220,1)',
+      pointHoverBorderWidth: 2,
+      pointRadius: 1,
+      pointHitRadius: 10,
+      data: [65, 59, 80, 81, 56, 55, 40]
+    },
+    {
+        label: 'Ethics',
+        fill: false,
+        lineTension: 0.1,
+        backgroundColor: 'rgba(75,192,192,0.4)',
+        borderColor: 'rgba(75,192,192,1)',
+        borderCapStyle: 'butt',
+        borderDash: [],
+        borderDashOffset: 0.0,
+        borderJoinStyle: 'miter',
+        pointBorderColor: 'rgba(75,192,192,1)',
+        pointBackgroundColor: '#fff',
+        pointBorderWidth: 1,
+        pointHoverRadius: 5,
+        pointHoverBackgroundColor: 'rgba(75,192,192,1)',
+        pointHoverBorderColor: 'rgba(220,220,220,1)',
+        pointHoverBorderWidth: 2,
+        pointRadius: 1,
+        pointHitRadius: 10,
+        data: [80, 30, 20, 100, 20, 70, 10]
+      },
+      {
+        label: 'Compliance',
+        fill: false,
+        lineTension: 0.1,
+        backgroundColor: 'rgba(75,192,192,0.4)',
+        borderColor: 'rgba(75,192,192,1)',
+        borderCapStyle: 'butt',
+        borderDash: [],
+        borderDashOffset: 0.0,
+        borderJoinStyle: 'miter',
+        pointBorderColor: 'rgba(75,192,192,1)',
+        pointBackgroundColor: '#fff',
+        pointBorderWidth: 1,
+        pointHoverRadius: 5,
+        pointHoverBackgroundColor: 'rgba(75,192,192,1)',
+        pointHoverBorderColor: 'rgba(220,220,220,1)',
+        pointHoverBorderWidth: 2,
+        pointRadius: 1,
+        pointHitRadius: 10,
+        data: [50, 50, 80, 50, 70, 50, 30]
+      },
+      {
+        label: 'Transperancy',
+        fill: false,
+        lineTension: 0.1,
+        backgroundColor: 'rgba(75,192,192,0.4)',
+        borderColor: 'rgba(75,192,192,1)',
+        borderCapStyle: 'butt',
+        borderDash: [],
+        borderDashOffset: 0.0,
+        borderJoinStyle: 'miter',
+        pointBorderColor: 'rgba(75,192,192,1)',
+        pointBackgroundColor: '#fff',
+        pointBorderWidth: 1,
+        pointHoverRadius: 5,
+        pointHoverBackgroundColor: 'rgba(75,192,192,1)',
+        pointHoverBorderColor: 'rgba(220,220,220,1)',
+        pointHoverBorderWidth: 2,
+        pointRadius: 1,
+        pointHitRadius: 10,
+        data: [40, 40, 50, 80, 10, 60, 80]
+      },
+      {
+        label: 'Business Impact',
+        fill: false,
+        lineTension: 0.1,
+        backgroundColor: 'rgba(75,192,192,0.4)',
+        borderColor: 'rgba(75,192,192,1)',
+        borderCapStyle: 'butt',
+        borderDash: [],
+        borderDashOffset: 0.0,
+        borderJoinStyle: 'miter',
+        pointBorderColor: 'rgba(75,192,192,1)',
+        pointBackgroundColor: '#fff',
+        pointBorderWidth: 1,
+        pointHoverRadius: 5,
+        pointHoverBackgroundColor: 'rgba(75,192,192,1)',
+        pointHoverBorderColor: 'rgba(220,220,220,1)',
+        pointHoverBorderWidth: 2,
+        pointRadius: 1,
+        pointHitRadius: 10,
+        data: [70, 50, 60, 20, 30, 60, 80]
+      }
+  ]
 };
 
 
@@ -68,7 +134,7 @@ const SalesSummary = () => {
                         <CardTitle>Overview</CardTitle>
                         <CardSubtitle>Details about the Graph</CardSubtitle>
                     </div>
-                    <div className="ml-auto ">
+                    {/* <div className="ml-auto ">
                         <ul className="list-inline font-12 dl mr-3 mb-0">
                             <li className="border-0 p-0 text-info list-inline-item">
                                 <i className="fa fa-circle"></i> Security
@@ -86,14 +152,17 @@ const SalesSummary = () => {
                                 <i className="fa fa-circle"></i> Buisness Impact
 								</li>
                         </ul>
-                    </div>
+                    </div> */}
                 </div>
                 <Row>
                     <Col lg="12">
                         <div className="campaign ct-charts">
-                            <div className="chart-wrapper" style={{ width: '100%', margin: '0 auto', height: 250 }}>
-                                <Line data={lineData} options={{ maintainAspectRatio: false, legend: { display: false, labels: { fontFamily: "Nunito Sans" } }, scales: { yAxes: [{ stacked: true, gridLines: { display: false }, ticks: { fontFamily: "Nunito Sans" } }], xAxes: [{ gridLines: { display: false }, ticks: { fontFamily: "Nunito Sans" } }] } }} />
-                            </div>
+                        <div>
+                            
+                            <Line data={data} data1={data}/>
+                            
+                        </div>
+                        
                         </div>
                     </Col>
                 </Row>

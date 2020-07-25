@@ -23,9 +23,6 @@ const Fulllayout = (props) => {
         }
     });
 
-    /*--------------------------------------------------------------------------------*/
-    /*Function that handles sidebar, changes when resizing App                        */
-    /*--------------------------------------------------------------------------------*/
     useEffect(() => {
         const updateDimensions = () => {
             let element = document.getElementById('main-wrapper');
@@ -46,9 +43,7 @@ const Fulllayout = (props) => {
         };
     }, [width]);
 
-    /*--------------------------------------------------------------------------------*/
-    /* Theme Setting && Layout Options wiil be Change From Here                       */
-    /*--------------------------------------------------------------------------------*/
+   
     return (
         <div
             id="main-wrapper"

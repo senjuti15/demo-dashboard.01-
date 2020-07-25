@@ -37,7 +37,6 @@ const Projects = () => {
                         <tr>
                             <td>
                                 <div className="d-flex no-block align-items-center">
-                                    <div className="mr-2"><img src={img1} alt="user" className="rounded-circle" width="45" /></div>
                                     <div className="">
                                         <h5 className="mb-0 font-16 font-medium">Security</h5></div>
                                 </div>
@@ -49,7 +48,16 @@ const Projects = () => {
                                 <i className="fa fa-circle text-orange" id="tlp1"></i>
 
                             </td>
-                            <td>35</td>
+
+                            <td>
+                            <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"></input>
+                            <label class="form-check-label" for="inlineRadio1">Approve</label></div>
+                            <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"></input>
+                            <label class="form-check-label" for="inlineRadio2">Reject</label>
+                            </div>
+                            </td>
                             
                         </tr>
                         
@@ -58,7 +66,7 @@ const Projects = () => {
                         <tr>
                             <td>
                                 <div className="d-flex no-block align-items-center">
-                                    <div className="mr-2"><img src={img1} alt="user" className="rounded-circle" width="45" /></div>
+                                    
                                     <div className="">
                                         <h5 className="mb-0 font-16 font-medium">Biasness</h5></div>
                                 </div>
@@ -69,8 +77,16 @@ const Projects = () => {
                                 <i className="fa fa-circle text-orange" id="tlp1"></i>
 
                             </td>
-                            <td>35</td>
                             
+                            <td>
+                            <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"></input>
+                            <label class="form-check-label" for="inlineRadio1">Approve</label></div>
+                            <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"></input>
+                            <label class="form-check-label" for="inlineRadio2">Reject</label>
+                            </div>
+                            </td>
                         </tr>
                         
                     </tbody>
@@ -78,7 +94,7 @@ const Projects = () => {
                         <tr>
                             <td>
                                 <div className="d-flex no-block align-items-center">
-                                    <div className="mr-2"><img src={img1} alt="user" className="rounded-circle" width="45" /></div>
+                               
                                     <div className="">
                                         <h5 className="mb-0 font-16 font-medium">Compliance</h5></div>
                                 </div>
@@ -90,7 +106,16 @@ const Projects = () => {
                                 <i className="fa fa-circle text-orange" id="tlp1"></i>
 
                             </td>
-                            <td>35</td>
+                            
+                            <td>
+                            <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"></input>
+                            <label class="form-check-label" for="inlineRadio1">Approve</label></div>
+                            <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"></input>
+                            <label class="form-check-label" for="inlineRadio2">Reject</label>
+                            </div>
+                            </td>
                             
                         </tr>
                         
@@ -99,7 +124,7 @@ const Projects = () => {
                         <tr>
                             <td>
                                 <div className="d-flex no-block align-items-center">
-                                    <div className="mr-2"><img src={img1} alt="user" className="rounded-circle" width="45" /></div>
+                                    {/* <div className="mr-2"> alt="user" className="rounded-circle" width="45"</div> */}
                                     <div className="">
                                         <h5 className="mb-0 font-16 font-medium">Tranperancy</h5></div>
                                 </div>
@@ -111,7 +136,16 @@ const Projects = () => {
                                 <i className="fa fa-circle text-orange" id="tlp1"></i>
 
                             </td>
-                            <td>35</td>
+                            
+                            <td>
+                            <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"></input>
+                            <label class="form-check-label" for="inlineRadio1">Approve</label></div>
+                            <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"></input>
+                            <label class="form-check-label" for="inlineRadio2">Reject</label>
+                            </div>
+                            </td>
                             
                         </tr>
                         
@@ -120,7 +154,7 @@ const Projects = () => {
                         <tr>
                             <td>
                                 <div className="d-flex no-block align-items-center">
-                                    <div className="mr-2"><img src={img1} alt="user" className="rounded-circle" width="45" /></div>
+                                 
                                     <div className="">
                                         <h5 className="mb-0 font-16 font-medium">Business Impact</h5></div>
                                 </div>
@@ -132,7 +166,16 @@ const Projects = () => {
                                 <i className="fa fa-circle text-orange" id="tlp1"></i>
 
                             </td>
-                            <td>35</td>
+                            
+                            <td>
+                            <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"></input>
+                            <label class="form-check-label" for="inlineRadio1">Approve</label></div>
+                            <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"></input>
+                            <label class="form-check-label" for="inlineRadio2">Reject</label>
+                            </div>
+                            </td>
                             
                         </tr>
                         

@@ -1897,7 +1897,7 @@ pre code {
 .table td {
     padding: 1rem;
     vertical-align: top;
-    border-top: 1px solid #dee2e6;
+    border-top: 1px solid #323232;
 }
 
 .table thead th {
@@ -11610,10 +11610,6 @@ a.link:focus {
     color: #007bff;
 }
 
-.no-wrap td,
-.no-wrap th {
-    white-space: nowrap;
-}
 
 .clear {
     clear: both;
