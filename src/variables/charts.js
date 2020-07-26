@@ -115,51 +115,6 @@ let chart1_2_options = {
         ]
       };
     },
-    data2: canvas => {
-      let ctx = canvas.getContext("2d");
-  
-      let gradientStroke = ctx.createLinearGradient(0, 230, 0, 50);
-  
-      gradientStroke.addColorStop(1, "rgba(29,140,248,0.2)");
-      gradientStroke.addColorStop(0.4, "rgba(29,140,248,0.0)");
-      gradientStroke.addColorStop(0, "rgba(29,140,248,0)"); //blue colors
-  
-      return {
-        labels: [
-          "JAN",
-          "FEB",
-          "MAR",
-          "APR",
-          "MAY",
-          "JUN",
-          "JUL",
-          "AUG",
-          "SEP",
-          "OCT",
-          "NOV",
-          "DEC"
-        ],
-        datasets: [
-          {
-            label: "My First dataset",
-            fill: true,
-            backgroundColor: gradientStroke,
-            borderColor: "#1f8ef1",
-            borderWidth: 2,
-            borderDash: [],
-            borderDashOffset: 0.0,
-            pointBackgroundColor: "#1f8ef1",
-            pointBorderColor: "rgba(255,255,255,0)",
-            pointHoverBackgroundColor: "#1f8ef1",
-            pointBorderWidth: 20,
-            pointHoverRadius: 4,
-            pointHoverBorderWidth: 15,
-            pointRadius: 4,
-            data: [80, 120, 105, 110, 95, 105, 90, 100, 80, 95, 70, 120]
-          }
-        ]
-      };
-    },
     data3: canvas => {
       let ctx = canvas.getContext("2d");
   
@@ -201,8 +156,8 @@ let chart1_2_options = {
   };
   
   
-  let chartExample2 = {
-    data: canvas => {
+  let security1 = {
+    d1: canvas => {
       let ctx = canvas.getContext("2d");
   
       let gradientStroke = ctx.createLinearGradient(0, 230, 0, 50);
@@ -212,7 +167,7 @@ let chart1_2_options = {
       gradientStroke.addColorStop(0, "rgba(29,140,248,0)"); //blue colors
   
       return {
-        labels: ["JUL", "AUG", "SEP", "OCT", "NOV", "DEC"],
+        labels: ["1", "2", "3", "4", "5", "6"],
         datasets: [
           {
             label: "Data",
@@ -229,7 +184,151 @@ let chart1_2_options = {
             pointHoverRadius: 4,
             pointHoverBorderWidth: 15,
             pointRadius: 4,
-            data: [80, 100, 70, 80, 120, 80]
+            data: [34, 60, 70, 39, 160, 50]
+          }
+        ]
+      };
+    },
+    options: chart1_2_options
+  };
+
+  let ethics1  = {
+    d2: canvas => {
+      let ctx = canvas.getContext("2d");
+  
+      let gradientStroke = ctx.createLinearGradient(0, 230, 0, 50);
+  
+      gradientStroke.addColorStop(1, "rgba(29,140,248,0.2)");
+      gradientStroke.addColorStop(0.4, "rgba(29,140,248,0.0)");
+      gradientStroke.addColorStop(0, "rgba(29,140,248,0)"); //blue colors
+  
+      return {
+        labels: ["1", "2", "3", "4", "5", "6"],
+        datasets: [
+          {
+            label: "Data",
+            fill: true,
+            backgroundColor: gradientStroke,
+            borderColor: "#1f8ef1",
+            borderWidth: 2,
+            borderDash: [],
+            borderDashOffset: 0.0,
+            pointBackgroundColor: "#1f8ef1",
+            pointBorderColor: "rgba(255,255,255,0)",
+            pointHoverBackgroundColor: "#1f8ef1",
+            pointBorderWidth: 20,
+            pointHoverRadius: 4,
+            pointHoverBorderWidth: 15,
+            pointRadius: 4,
+            data: [34, 60, 70, 39, 160, 50]
+          }
+        ]
+      };
+    },
+    options: chart1_2_options
+  };
+
+  let compliance1 = {
+    d4: canvas => {
+      let ctx = canvas.getContext("2d");
+  
+      let gradientStroke = ctx.createLinearGradient(0, 230, 0, 50);
+  
+      gradientStroke.addColorStop(1, "rgba(29,140,248,0.2)");
+      gradientStroke.addColorStop(0.4, "rgba(29,140,248,0.0)");
+      gradientStroke.addColorStop(0, "rgba(29,140,248,0)"); //blue colors
+  
+      return {
+        labels: ["1", "2", "3", "4", "5", "6"],
+        datasets: [
+          {
+            label: "Data",
+            fill: true,
+            backgroundColor: gradientStroke,
+            borderColor: "#1f8ef1",
+            borderWidth: 2,
+            borderDash: [],
+            borderDashOffset: 0.0,
+            pointBackgroundColor: "#1f8ef1",
+            pointBorderColor: "rgba(255,255,255,0)",
+            pointHoverBackgroundColor: "#1f8ef1",
+            pointBorderWidth: 20,
+            pointHoverRadius: 4,
+            pointHoverBorderWidth: 15,
+            pointRadius: 4,
+            data: [45, 23, 70, 45, 80, 60]
+          }
+        ]
+      };
+    },
+    options: chart1_2_options
+  };
+
+  let busi_imp1 = {
+    d5: canvas => {
+      let ctx = canvas.getContext("2d");
+  
+      let gradientStroke = ctx.createLinearGradient(0, 230, 0, 50);
+  
+      gradientStroke.addColorStop(1, "rgba(29,140,248,0.2)");
+      gradientStroke.addColorStop(0.4, "rgba(29,140,248,0.0)");
+      gradientStroke.addColorStop(0, "rgba(29,140,248,0)"); //blue colors
+  
+      return {
+        labels: ["1", "2", "3", "4", "5", "6"],
+        datasets: [
+          {
+            label: "Data",
+            fill: true,
+            backgroundColor: gradientStroke,
+            borderColor: "#1f8ef1",
+            borderWidth: 2,
+            borderDash: [],
+            borderDashOffset: 0.0,
+            pointBackgroundColor: "#1f8ef1",
+            pointBorderColor: "rgba(255,255,255,0)",
+            pointHoverBackgroundColor: "#1f8ef1",
+            pointBorderWidth: 20,
+            pointHoverRadius: 4,
+            pointHoverBorderWidth: 15,
+            pointRadius: 4,
+            data: [43, 34, 55, 12, 70, 40]
+          }
+        ]
+      };
+    },
+    options: chart1_2_options
+  };
+
+  let transperancy1 = {
+    d3: canvas => {
+      let ctx = canvas.getContext("2d");
+  
+      let gradientStroke = ctx.createLinearGradient(0, 230, 0, 50);
+  
+      gradientStroke.addColorStop(1, "rgba(29,140,248,0.2)");
+      gradientStroke.addColorStop(0.4, "rgba(29,140,248,0.0)");
+      gradientStroke.addColorStop(0, "rgba(29,140,248,0)"); //blue colors
+  
+      return {
+        labels: ["1", "2", "3", "4", "5", "6"],
+        datasets: [
+          {
+            label: "Data",
+            fill: true,
+            backgroundColor: gradientStroke,
+            borderColor: "#1f8ef1",
+            borderWidth: 2,
+            borderDash: [],
+            borderDashOffset: 0.0,
+            pointBackgroundColor: "#1f8ef1",
+            pointBorderColor: "rgba(255,255,255,0)",
+            pointHoverBackgroundColor: "#1f8ef1",
+            pointBorderWidth: 20,
+            pointHoverRadius: 4,
+            pointHoverBorderWidth: 15,
+            pointRadius: 4,
+            data: [33, 11, 67, 70, 30, 70]
           }
         ]
       };
@@ -421,10 +520,162 @@ let chart1_2_options = {
       }
     }
   };
+
+
+  let badges1 = {
+    b1: canvas => {
+      let ctx = canvas.getContext("2d");
+  
+      let gradientStroke = ctx.createLinearGradient(0, 230, 0, 50);
+  
+      gradientStroke.addColorStop(1, "rgba(29,140,248,0.2)");
+      gradientStroke.addColorStop(0.4, "rgba(29,140,248,0.0)");
+      gradientStroke.addColorStop(0, "rgba(29,140,248,0)"); //blue colors
+
+      let gradientStroke1 = ctx.createLinearGradient(0, 230, 0, 50);
+  
+      gradientStroke1.addColorStop(1, "rgba(208,72,182,0.2)");
+      gradientStroke1.addColorStop(0.4, "rgba(208,72,182,0.0)");
+      gradientStroke1.addColorStop(0, "rgba(208,72,182,0)"); //blue colors
+  
+      return {
+        labels: [
+          "JAN",
+          "FEB",
+          "MAR",
+          "APR",
+          "MAY",
+          "JUN",
+          "JUL",
+          "AUG",
+          "SEP",
+          "OCT",
+          "NOV",
+          "DEC"
+
+        ],
+        datasets: [
+          {
+            label: "After SigmaRed",
+            fill: true,
+            backgroundColor: gradientStroke1,
+            borderColor: "#d048b6 ",
+            borderWidth: 2,
+            pointBackgroundColor: "#d048b6 ",
+            pointBorderColor: "#d048b6",
+            pointHoverBackgroundColor: "#d048b6 ",
+            pointBorderWidth: 1,
+            pointHoverRadius: 4,
+            pointHoverBorderWidth: 15,
+            stack: '0',
+            pointRadius: 4,
+            data: [0, 30, 40, 60, 40, 70, 80, 100, 80, 95, 70, 120]
+            
+          },
+          {
+            label:"Before SigmaRed",
+            fill: true,
+            backgroundColor: gradientStroke,
+            borderColor: "#1f8ef1",
+            borderWidth: 2,
+            pointBackgroundColor: "#1f8ef1",
+            pointBorderColor: "r#1f8ef1",
+            pointHoverBackgroundColor: "#1f8ef1",
+            pointBorderWidth: 1,
+            pointHoverRadius: 4,
+            pointHoverBorderWidth: 15,
+            stack: '1',
+            pointRadius: 4,
+            data: [10, 40, 50, 60, 60, 30, 50, 80, 66, 70, 50, 80]
+          }
+        ]
+      };
+    },
+    data1: canvas => {
+      let ctx = canvas.getContext("2d");
+  
+      let gradientStroke = ctx.createLinearGradient(0, 230, 0, 50);
+  
+      gradientStroke.addColorStop(1, "rgba(29,140,248,0.2)");
+      gradientStroke.addColorStop(0.4, "rgba(29,140,248,0.0)");
+      gradientStroke.addColorStop(0, "rgba(29,140,248,0)"); //blue colors
+
+      let gradientStroke1 = ctx.createLinearGradient(0, 230, 0, 50);
+  
+      gradientStroke1.addColorStop(1, "rgba(208,72,182,0.2)");
+      gradientStroke1.addColorStop(0.4, "rgba(208,72,182,0.0)");
+      gradientStroke1.addColorStop(0, "rgba(208,72,182,0)"); //blue colors
+  
+      return {
+        labels: [
+          "JAN",
+          "FEB",
+          "MAR",
+          "APR",
+          "MAY",
+          "JUN",
+          "JUL",
+          "AUG",
+          "SEP",
+          "OCT",
+          "NOV",
+          "DEC"
+        ],
+        datasets: [
+          {
+            label: "My First dataset",
+            fill: true,
+            backgroundColor: gradientStroke,
+            borderColor: "#1f8ef1",
+            borderWidth: 2,
+            borderDash: [],
+            borderDashOffset: 0.0,
+            pointBackgroundColor: "#1f8ef1",
+            pointBorderColor: "rgba(255,255,255,0)",
+            pointHoverBackgroundColor: "#1f8ef1",
+            pointBorderWidth: 20,
+            pointHoverRadius: 4,
+            pointHoverBorderWidth: 15,
+            pointRadius: 4,
+            stack: 0,
+            data: [10, 40, 50, 60, 60, 30, 50, 80, 66, 70, 50, 80]
+          },
+          {
+            label: "My First dataset",
+            fill: true,
+            backgroundColor: gradientStroke1,
+            borderColor: "rgba(208,72,182)",
+            borderWidth: 2,
+            borderDash: [],
+            borderDashOffset: 0.0,
+            pointBackgroundColor: "#1f8ef1",
+            pointBorderColor: "rgba(255,255,255,0)",
+            pointHoverBackgroundColor: "#1f8ef1",
+            pointBorderWidth: 20,
+            pointHoverRadius: 4,
+            pointHoverBorderWidth: 15,
+            pointRadius: 4,
+            stack: 1,
+            data: [0, 30, 40, 60, 40, 70, 80, 100, 80, 95, 70, 120]
+          }
+        ]
+      };
+    },
+    options: chart1_2_options
+  };
+
+
+  
   
   module.exports = {
     chartExample1, // in src/views/Dashboard.js
-    chartExample2, // in src/views/Dashboard.js
+ // in src/views/Dashboard.js
     chartExample3, // in src/views/Dashboard.js
-    chartExample4 // in src/views/Dashboard.js
+    chartExample4, // in src/views/Dashboard.js
+    badges1,
+    busi_imp1 ,
+    security1,
+    ethics1,
+    transperancy1,
+    compliance1
   };

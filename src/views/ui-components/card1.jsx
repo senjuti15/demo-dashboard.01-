@@ -2,7 +2,7 @@ import React from "react";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // react plugin used to create charts
-import { Line, Bar } from "react-chartjs-2";
+import { Line} from "react-chartjs-2";
 
 import {
     Button,
@@ -26,17 +26,14 @@ import {
 
 // core components
 import {
-    chartExample1,
-    chartExample2,
-    chartExample3,
-    chartExample4
+    security1
   } from "/Users/senjutibala/Documents/SigmaRed_projects/demo/demo-dashboard.01/src/variables/charts.js";
   
-  class chart1 extends React.Component {
+  class Card1 extends React.Component {
     constructor(props) {
       super(props);
       this.state = {
-        bigChartData: "data1",
+        bigChartData_sec: "d1",
       };
     }
     setBgChartData = name => {
@@ -50,138 +47,24 @@ import {
         return ( 
             <>
             <Card>
-                
-              <Row xs="20">
-                  <Col>
-                  <CardBody>
-                      <CardTitle>Dataset Type</CardTitle>
-                    <div className="chart-area-1">
-                        <Bar
-                            data = {chartExample1[this.state.bigChartData]}
-                            options = {chartExample1.options}/>
-                            </div>
-                </CardBody></Col>
-                
+            <Col>
+                    
+                    <CardBody>
+                        <CardTitle>Security</CardTitle>
                         
-                   
-                <Col>
-                <CardBody>
-                <CardTitle>Dataset Type</CardTitle>
-                    <div className="chart-area-1">
-                        <Bar
-                        data = {chartExample1[this.state.bigChartData]}
-                        options = {chartExample1.options}
-                        />
-                    </div>
-                </CardBody>
-                </Col>
-
-                <Col>          
-                <CardBody>
-                <CardTitle>Dataset Type</CardTitle>
-                    <div className="chart-area-1">
-                        <Bar
-                        data = {chartExample1[this.state.bigChartData]}
-                        options = {chartExample1.options}
-                        />
-                    </div>
-                </CardBody>
-                </Col>
+                      <div className="chart-area-1">
+                      
+                          <Line
+                              data = {security1[this.state.bigChartData_sec]}
+                              options = {security1.options} 
+                              height={"100px"}/>
+                              
+                              </div>
+                              
+                  </CardBody>
+                  
+                  </Col>
                 
-            </Row>
-            </Card> 
-            <Card>
-                
-              <Row xs="20">
-                  <Col>
-                  <CardBody>
-                  <CardTitle>Dataset Type</CardTitle>
-                    <div className="chart-area-1">
-                        <Bar
-                            data = {chartExample1[this.state.bigChartData]}
-                            options = {chartExample1.options}/>
-                            </div>
-                </CardBody></Col>
-                
-                        
-                   
-                <Col>
-                <CardBody>
-                <CardTitle>Dataset Type</CardTitle>
-                    <div className="chart-area-1">
-                        <Bar
-                        data = {chartExample1[this.state.bigChartData]}
-                        options = {chartExample1.options}
-                        />
-                    </div>
-                </CardBody>
-                </Col>
-
-                <Col>          
-                <CardBody>
-                <CardTitle>Dataset Type</CardTitle>
-                    <div className="chart-area-1">
-                        <Bar
-                        data = {chartExample1[this.state.bigChartData]}
-                        options = {chartExample1.options}
-                        />
-                    </div>
-                </CardBody>
-                </Col>
-                
-            </Row>
-            </Card> 
-
-            
-            <Card>
-                //  Details         
-            </Card>
-            
-            <Card>
-                
-              <Row xs="20">
-                  <Col>
-                  <CardBody>
-                  <CardTitle>Dataset Type</CardTitle>
-                    <div className="chart-area-1">
-                        <Bar
-                            data = {chartExample1[this.state.bigChartData]}
-                            options = {chartExample1.options}/>
-                            </div>
-                </CardBody></Col>
-                
-                        
-                   
-                <Col>
-                <CardBody>
-                <CardTitle>Dataset Type</CardTitle>
-                    <div className="chart-area-1">
-                        <Bar
-                        data = {chartExample1[this.state.bigChartData]}
-                        options = {chartExample1.options}
-                        />
-                    </div>
-                </CardBody>
-                </Col>
-
-                <Col>          
-                <CardBody>
-                <CardTitle>Dataset Type</CardTitle>
-                    <div className="chart-area-1">
-                        <Bar
-                        data = {chartExample1[this.state.bigChartData]}
-                        options = {chartExample1.options}
-                        />
-                    </div>
-                </CardBody>
-                </Col>
-                
-            </Row>
-            </Card>  
-
-            <Card>
-                
-                //  Details         
             </Card>
             </>
 
@@ -189,4 +72,4 @@ import {
 }
 }
 
-export default chart1;
+export default Card1;

@@ -26,11 +26,11 @@ const Projects = () => {
                 <Table className="no-wrap v-middle" responsive>
                     <thead>
                         <tr className="border-0">
-                            <th className="border-0">Piller</th>
-                            <th className="border-0">Description</th>
+                            <th className="border-0">PILLAR</th>
+                            <th className="border-0">DESCRIPTION</th>
 
-                            <th className="border-0">Severiaty</th>
-                            <th className="border-0">Action</th>
+                            <th className="border-0">SEVERITY</th>
+                            <th className="border-0">ACTION</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -44,18 +44,13 @@ const Projects = () => {
                             <td>Details
                             </td>
 
-                            <td>
-                                <i className="fa fa-circle text-orange" id="tlp1"></i>
-
-                            </td>
+                            <td>Critical</td>
 
                             <td>
                             <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"></input>
                             <label class="form-check-label" for="inlineRadio1">Approve</label></div>
                             <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"></input>
-                            <label class="form-check-label" for="inlineRadio2">Reject</label>
                             </div>
                             </td>
                             
@@ -73,18 +68,14 @@ const Projects = () => {
                             </td>
                             <td>Details</td>
 
-                            <td>
-                                <i className="fa fa-circle text-orange" id="tlp1"></i>
-
-                            </td>
+                            <td>Critical</td>
                             
                             <td>
                             <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"></input>
                             <label class="form-check-label" for="inlineRadio1">Approve</label></div>
                             <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"></input>
-                            <label class="form-check-label" for="inlineRadio2">Reject</label>
+                            
                             </div>
                             </td>
                         </tr>
@@ -102,18 +93,14 @@ const Projects = () => {
                             <td>Details
                             </td>
 
-                            <td>
-                                <i className="fa fa-circle text-orange" id="tlp1"></i>
-
-                            </td>
+                            <td>Critical</td>
                             
                             <td>
                             <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"></input>
                             <label class="form-check-label" for="inlineRadio1">Approve</label></div>
                             <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"></input>
-                            <label class="form-check-label" for="inlineRadio2">Reject</label>
+                          
                             </div>
                             </td>
                             
@@ -132,18 +119,14 @@ const Projects = () => {
                             <td>Details
                             </td>
 
-                            <td>
-                                <i className="fa fa-circle text-orange" id="tlp1"></i>
-
-                            </td>
+                            <td>Critical</td>
                             
                             <td>
                             <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"></input>
                             <label class="form-check-label" for="inlineRadio1">Approve</label></div>
                             <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"></input>
-                            <label class="form-check-label" for="inlineRadio2">Reject</label>
+                         
                             </div>
                             </td>
                             
@@ -162,18 +145,14 @@ const Projects = () => {
                             <td>Details
                             </td>
 
-                            <td>
-                                <i className="fa fa-circle text-orange" id="tlp1"></i>
-
-                            </td>
+                            <td>Critical</td>
                             
                             <td>
                             <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"></input>
                             <label class="form-check-label" for="inlineRadio1">Approve</label></div>
                             <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"></input>
-                            <label class="form-check-label" for="inlineRadio2">Reject</label>
+              
                             </div>
                             </td>
                             

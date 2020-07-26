@@ -7350,7 +7350,7 @@ button.bg-inverse:focus {
 }
 
 .border-info {
-    border-color: #2962ff !important;
+    border-color: #e2e2e2 !important;
 }
 
 .border-warning {
@@ -10786,7 +10786,7 @@ button.bg-inverse:focus {
 }
 
 .text-primary {
-    color: #2962ff !important;
+    color: #e2e2e2 !important;
 }
 
 a.text-primary:hover,
@@ -10813,7 +10813,7 @@ a.text-success:focus {
 }
 
 .text-info {
-    color: #ffcc13 !important;
+    color: #ffc107 !important;
 }
 
 a.text-info:hover,
