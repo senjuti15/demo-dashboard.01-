@@ -36,7 +36,7 @@ import {
     ethics1,
     transperancy1,
     compliance1
-} from "/Users/senjutibala/Documents/SigmaRed_projects/demo/dashboard-f-1/src/variables/charts.js";
+} from "/Users/senjutibala/Documents/SigmaRed_projects/demo/demo-dashboard.01/src/variables/charts.js";
 
 class Badges extends React.Component {
   constructor(props) {
