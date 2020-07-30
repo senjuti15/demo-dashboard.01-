@@ -6,13 +6,13 @@ import Badges from '../views/ui-components/badge.jsx';
 var ThemeRoutes = [
   { 
     path: '/dashboard', 
-    name: 'Dashboard', 
+    name: 'Overview', 
     icon: 'ti-loop', 
     component: Starter 
   },
   {
     path: '/alert',
-    name: 'AI Assesment',
+    name: 'Risk Assessment',
     icon: 'mdi mdi-comment-processing-outline',
     component: Alerts
   },

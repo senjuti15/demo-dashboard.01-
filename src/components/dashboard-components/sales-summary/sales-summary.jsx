@@ -48,7 +48,7 @@ const data = {
       pointHoverBorderWidth: 2,
       pointRadius: 1,
       pointHitRadius: 10,
-      data: [0, 30, 40, 60, 40, 70, 80, 100, 80, 95, 70, 120]
+      data: [0, 4, 10, 7, 8, 9, 15, 10, 10, 15, 25, 30]
     },
     {
         label: 'Ethics',
@@ -69,7 +69,7 @@ const data = {
         pointHoverBorderWidth: 2,
         pointRadius: 1,
         pointHitRadius: 10,
-        data: [0, 40, 50, 60, 60, 30, 50, 80, 66, 70, 50, 80]
+        data: [0, 7, 8, 6, 8, 12, 19, 15, 20, 17, 20, 28]
       },
       {
         label: 'Compliance',
@@ -90,10 +90,10 @@ const data = {
         pointHoverBorderWidth: 2,
         pointRadius: 1,
         pointHitRadius: 10,
-        data: [0, 56, 66, 45, 30, 56, 78, 54, 34, 67, 87, 45]
+        data: [0, 5, 10, 7, 12, 20, 16, 19, 15, 23, 18, 28]
       },
       {
-        label: 'Transperancy',
+        label: 'Transparency',
         fill: false,
   
         backgroundColor: '#17a2b8',
@@ -111,29 +111,29 @@ const data = {
         pointHoverBorderWidth: 2,
         pointRadius: 1,
         pointHitRadius: 10,
-        data: [0, 45, 56, 43, 67, 34, 57, 60, 60, 70, 50, 67]
+        data: [0, 2, 8, 6, 8, 3, 10, 15, 7, 17, 16, 29]
       },
-      {
-        label: 'Business Impact',
-        fill: false,
+    //   {
+    //     label: 'Business Impact',
+    //     fill: false,
 
-        backgroundColor: '#ffc107',
-        borderColor: '#ffc107',
-        borderCapStyle: 'butt',
-        borderDash: [],
-        borderDashOffset: 0.0,
-        borderJoinStyle: 'miter',
-        pointBorderColor: '#ffc107',
-        pointBackgroundColor: '#fff',
-        pointBorderWidth: 1,
-        pointHoverRadius: 5,
-        pointHoverBackgroundColor: '#ffc107',
-        pointHoverBorderColor: '#ffc107',
-        pointHoverBorderWidth: 2,
-        pointRadius: 1,
-        pointHitRadius: 10,
-        data: [0, 20, 30, 40, 50, 70, 80, 90, 95, 87, 70, 110]
-      }
+    //     backgroundColor: '#ffc107',
+    //     borderColor: '#ffc107',
+    //     borderCapStyle: 'butt',
+    //     borderDash: [],
+    //     borderDashOffset: 0.0,
+    //     borderJoinStyle: 'miter',
+    //     pointBorderColor: '#ffc107',
+    //     pointBackgroundColor: '#fff',
+    //     pointBorderWidth: 1,
+    //     pointHoverRadius: 5,
+    //     pointHoverBackgroundColor: '#ffc107',
+    //     pointHoverBorderColor: '#ffc107',
+    //     pointHoverBorderWidth: 2,
+    //     pointRadius: 1,
+    //     pointHitRadius: 10,
+    //     data: [0, 20, 30, 40, 50, 70, 80, 90, 95, 87, 70, 110]
+    //   }
   ]
 };
 
@@ -154,13 +154,13 @@ const SalesSummary = () => {
                                 <i className="fa fa-circle"></i> Security
 								</li>
                             <li className="border-0 p-0 text-primary list-inline-item">
-                                <i className="fa fa-circle"></i> Biasness
+                                <i className="fa fa-circle"></i> Ethics
 								</li>
                                 <li className="border-0 p-0 text-primary list-inline-item">
                                 <i className="fa fa-circle"></i> Compliance
 								</li>
                                 <li className="border-0 p-0 text-primary list-inline-item">
-                                <i className="fa fa-circle"></i> Transperancy
+                                <i className="fa fa-circle"></i> Transparency
 								</li>
                                 <li className="border-0 p-0 text-primary list-inline-item">
                                 <i className="fa fa-circle"></i> Buisness Impact

@@ -26,15 +26,15 @@ const data = {
         // }
       },
 
-      labels: ['Security', 'Ethics', 'Compliance', 'Transperancy', 'Business Impact'],
+      labels: ['Security', 'Ethics', 'Compliance', 'Transparency'],
       datasets: [
         {
           label: 'Emails',
           pointRadius: 0,
           pointHoverRadius: 0,
-          backgroundColor: ['#00c09d', '#e2e2e2', '#ff8d72','#17a2b8', '#ffc107'],
+          backgroundColor: ['#00c09d', '#e2e2e2', '#ff8d72','#17a2b8'],
           borderWidth: 0,
-          data: [60,40,50,70,60]
+          data: [60,40,50,70]
         }
       ],
       extraOptions: {
@@ -137,7 +137,7 @@ export default Feeds;
 //     constructor(props) {
 //         super(props)
 //         this.state = {
-//             labels: ['Security', 'Biasness', 'Compliance', 'Transperancy', 'Business Impact'],
+//             labels: ['Security', 'Ethics', 'Compliance', 'Transparency', 'Business Impact'],
 //             datasets: [{
 //                 data: [200, 300, 350, 400, 150],
 //                 backgroundColor: ['#FFC000', '#C04040', '#8040C0','#0040C0','#008040']
@@ -220,7 +220,7 @@ export default Feeds;
 //                                 <i className="fa fa-circle"></i> Security
 // 								</li>
 //                             <li className="border-0 p-0 text-primary list-inline-item">
-//                                 <i className="fa fa-circle"></i> Biasness
+//                                 <i className="fa fa-circle"></i> Ethics
 // 								</li>
 //                         </ul>
 //                     </div>

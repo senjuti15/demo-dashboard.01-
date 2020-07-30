@@ -2946,11 +2946,11 @@ fieldset:disabled a.btn {
 .btn-info:not(:disabled):not(.disabled).active,
 .show>.btn-info.dropdown-toggle {
     color: #fff;
-    background: #1d8cf8;
+    background: #efefef;
     background-image: linear-gradient(to bottom left, #1d8cf8, #3358f4, #1d8cf8);
     background-size: 210% 210%;
     background-position: top right;
-    background-color: #1d8cf8;
+    background-color: #efefef;
     transition: all 0.15s ease;
     box-shadow: none;
 }
@@ -2962,42 +2962,42 @@ fieldset:disabled a.btn {
 }
 
 .btn-warning {
-    color: #fff;
-    background-color: #fb6340;
-    border-color: #fb6340;
+    color: #1e1e1e;
+    background-color: #efefef;
+    border-color: #efefef;
     box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .btn-warning:hover {
-    color: #fff;
-    background-color: #fa441b;
-    border-color: #fa3a0e;
+    color: #1e1e1e;
+    background-color: #e4e4e4;
+    border-color: #888686;
 }
 
 .btn-warning:focus,
 .btn-warning.focus {
-    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08), 0 0 0 0.2rem rgba(251, 99, 64, 0.5);
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08), 0 0 0 0.2rem rgba(100, 99, 99, 0.5);
 }
 
 .btn-warning.disabled,
 .btn-warning:disabled {
-    color: #fff;
-    background-color: #fb6340;
-    border-color: #fb6340;
+    color: #1e1e1e;
+    background-color: #efefef;
+    border-color: #efefef;
 }
 
 .btn-warning:not(:disabled):not(.disabled):active,
 .btn-warning:not(:disabled):not(.disabled).active,
 .show>.btn-warning.dropdown-toggle {
-    color: #fff;
-    background-color: #fa3a0e;
-    border-color: #f63205;
+    color: #1e1e1e;
+    background-color: #efefef;
+    border-color: #efefef;
 }
 
 .btn-warning:not(:disabled):not(.disabled):active:focus,
 .btn-warning:not(:disabled):not(.disabled).active:focus,
 .show>.btn-warning.dropdown-toggle:focus {
-    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125), 0 0 0 0.2rem rgba(251, 99, 64, 0.5);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125), 0 0 0 0.2rem rgba(230, 227, 227, 0.3);
 }
 
 .btn-danger {
@@ -8988,7 +8988,7 @@ button.bg-inverse:focus {
 }
 
 .p-3 {
-    padding: 1rem !important;
+    padding: 0rem !important;
 }
 
 .pt-3,
@@ -12647,11 +12647,7 @@ Preloader
     line-height: 40px;
 }
 
-#main-wrapper[data-layout='vertical'],
-#main-wrapper[data-layout='horizontal'] {
-    /*This is for the logo bg*/
-    /*This is for the sidebar bg*/
-}
+
 
 #main-wrapper[data-layout='vertical'] .topbar .top-navbar .navbar-header[data-logobg='skin1'],
 #main-wrapper[data-layout='horizontal'] .topbar .top-navbar .navbar-header[data-logobg='skin1'] {
