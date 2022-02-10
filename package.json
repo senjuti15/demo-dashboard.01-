@@ -8,7 +8,7 @@
         "chart.heatmap.js": "0.0.1-alpha",
         "chart.js": "^1.1.1",
         "history": "4.7.2",
-        "node-sass": "^4.12.0",
+        "node-sass": "^7.0.0",
         "react": "^16.8.3",
         "react-chartjs-2": "^2.7.4",
         "react-dom": "^16.8.3",
